@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>מדענידע</title>
+    <link rel="icon" type="logo" href="headerlogo.png">
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="logo@2x.png"  /> <!--הלוגו של המשחק שלכם-->
+                <p></p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide" style="background-image: url(odotBG.png);">
+            <a class="closeAbout">X</a>
+            <h1 style=" margin-top: 39px; color: white;">מדענידע</h1>
+            <h2  style="margin-top: -13px; color: white;">אפיון ופיתוח: </h2>
+            <p class="odotfont"> עינב זערור | אריאל אסיאס | מאי חנניה</p>
+            <h2 style="color: white;">אופיין ופותח במסגרת הקורסים:</h2>
+            <p class="odotfont" >סביבות לימוד אינטראקטיביות 1 + תכנות אינטרקציה ואנימציה 1</p>
+            <p class="odotfont">תשפ”ג​</p>
+            <img class="hitPhoto" alt="HIT" src="logoHit.png">
+            <a class="hitLink"  href="https://www.hit.ac.il/" >הפקולטה לטכנולוגיות למידה</a>
+
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p> <img class="odot" alt="HowToPlay" src="HOWTOPLAY.png"></p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם -->
+            <iframe id="gameIframe" src="https://i.simmer.io/@einavzaror/madanyeda" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+    
+</body>
+
+</html>
